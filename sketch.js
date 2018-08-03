@@ -59,10 +59,8 @@ function draw() {
 	}
 	
 	for (var e = particles.length - 1; e >= 0; e--) {
-		if (particles.length > 0) {
+		if (particles[e] !== undefined && particles.length > 0) {
 			particles[e].explShow();
-		} else {
-			break;
 		}
 	}
 	
